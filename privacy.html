@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="客优云 ERP 登录助手的数据处理、Cookie 使用及隐私联系方式。">
+  <title>隐私政策 | 客优云 ERP 登录助手</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #202630; background: #fff; font: 16px/1.85 system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    main { width: min(800px, calc(100% - 40px)); margin: 48px auto; }
+    h1 { margin: 0; font-size: 28px; line-height: 1.4; }
+    h2 { margin: 28px 0 8px; font-size: 20px; line-height: 1.5; }
+    p { margin: 10px 0; overflow-wrap: anywhere; }
+    .meta { color: #667085; font-size: 14px; }
+    code { font-size: 0.95em; overflow-wrap: anywhere; }
+    a { color: #1769e0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>客优云 ERP 登录助手隐私政策</h1>
+    <p class="meta">更新日期：2026-10-31</p>
+    <p>本政策适用于“客优云 ERP 登录助手”浏览器扩展。本扩展供已获得相关账号访问授权的人员，配合指定的用户 Token 工具切换 ERP 登录账号。</p>
+
+    <h2>一、处理的数据与用途</h2>
+    <p>用户主动点击“跳转至 ERP”，或点击“查询并跳转 ERP”并成功查询后，扩展读取工具页面提供的 <code>refresh_token</code>，临时处理其中的用户 ID、用户名及有效期，并读取相关登录 Cookie，以完成用户请求的登录切换。</p>
+    <p>扩展只处理客优云父域及 ERP、API 主机下的 <code>access_token</code> 和 <code>refresh_token</code>：清除旧登录 Cookie、写入目标 refresh_token，并打开 ERP 页面。不操作其他 Cookie，不调用账号核对接口，不备份或恢复旧账号。</p>
+
+    <h2>二、存储与传输</h2>
+    <p>refresh_token 会按其声明的有效期保存在目标网站 Cookie 中，浏览器也可能限制 Cookie 的期限。扩展不在扩展存储、日志或开发者服务器中额外留存 Token、Cookie 或账号数据。</p>
+    <p>目标 refresh_token Cookie 使用 Secure 和 HttpOnly 属性。打开 ERP 后，浏览器会根据网站 Cookie 规则向客优云服务发送登录 Cookie，用于完成用户请求的登录。扩展不把 Token 拼接到跳转网址中，不向额外第三方服务器上传上述数据。</p>
+
+    <h2>三、权限范围</h2>
+    <p>cookies 权限及客优云主机权限用于读取、删除和写入对应登录 Cookie；指定工具页面的访问权限用于接收用户真实点击及读取用户选择使用的 Token。扩展不请求无关网站的访问权限。</p>
+
+    <h2>四、不进行的处理</h2>
+    <p>扩展不读取用户密码，不读取订单、支付、健康、位置、个人通讯或无关网页内容，不记录浏览历史、点击轨迹或按键记录；不出售用户数据，不将数据用于广告、分析、信用评估或贷款判断，不下载执行远程代码。</p>
+
+    <h2>五、用户控制</h2>
+    <p>用户可以通过禁用或卸载扩展停止后续处理。卸载不会自动清除已写入的网站登录 Cookie；如需删除，可在 ERP 退出登录，或在浏览器设置中清除对应网站的 Cookie。切换账号会影响同一浏览器配置文件中共享 Cookie 的 ERP 页面。</p>
+
+    <h2>六、配套服务与政策变更</h2>
+    <p>本政策仅覆盖扩展本身。配套用户 Token 工具及 ERP 网站的数据查询、服务器日志和其他业务处理，适用各自提供方的说明。如扩展的数据处理方式变化，发布者会同步更新本政策及商店披露信息。</p>
+
+    <h2>七、联系方式</h2>
+    <p>关于本扩展的隐私或支持问题，请联系发布者：<a href="tel:15273139765">15273139765</a>。</p>
+  </main>
+</body>
+</html>
